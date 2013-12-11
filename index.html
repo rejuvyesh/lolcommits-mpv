@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <a href="https://github.com/mroth/lolcommits"><img class="ribbon visible-desktop" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/rejuvyesh/lolcommits-mpv"><img class="ribbon visible-desktop" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -31,9 +31,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Additional Resources <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="http://github.com/mroth/lolcommits">Source on Github</a></li>
-                  <li><a href="http://github.com/mroth/lolcommits">Bug reports</a></li>
-                  <li><a href="http://github.com/mroth/lolcommits/wiki">Lolcommits Wiki</a></li>
+                  <li><a href="http://github.com/rejuvyesh/lolcommits-mpv">Source on Github</a></li>
+                  <li><a href="http://github.com/rejuvyesh/lolcommits-mpv">Bug reports</a></li>
+                  <li><a href="http://github.com/rejuvyesh/lolcommits-mpv/wiki">Lolcommits Wiki</a></li>
                 </ul>
               </li>
             </ul>
@@ -49,16 +49,17 @@
         <img src="assets/img/lolcommits_logo_300px.png" class="logo" />
         <h1>git + webcam = lulz.</h1>
         <p>lolcommits takes a snapshot with your webcam every time you git commit code, and archives a lolcat style image with it.  It's selfies for software developers.  <tt>git blame</tt> has never been so much fun.</p>
+        <p>This is a fork of <a href="http://mroth.github.io/lolcommits/">lolcommits</a> which uses <a href="https://github.com/mpv-player/mpv">mpv</a> instead of mplayer. </p>
       </div>
 
       <div class="social-buttons-row">
         <div class="container">
           <ul class="social-buttons">
             <li>
-              <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=mroth&amp;repo=lolcommits&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+              <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=rejuvyesh&amp;repo=lolcommits-mpv&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
             </li>
             <li>
-              <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=mroth&amp;repo=lolcommits&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+              <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=rejuvyesh&amp;repo=lolcommits-mpv&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
             </li>
             <li>
               <a href="https://twitter.com/lolcommits" class="twitter-follow-button" data-show-count="true" data-dnt="true">Follow @lolcommits</a>
@@ -88,11 +89,11 @@
         <div class="row">
           <div class="span6">
             <h4>Plugin-able</h4>
-            <p>Lolcommits allows a growing list of <a href="https://github.com/mroth/lolcommits/wiki/Configuring-Plugins">plugins</a> to perform additional work on your lolcommit image after capturing.  Submit your own with a <a href="https://github.com/mroth/lolcommits/pulls">pull-request</a> today!</p>
+            <p>Lolcommits allows a growing list of <a href="https://github.com/rejuvyesh/lolcommits-mpv/wiki/Configuring-Plugins">plugins</a> to perform additional work on your lolcommit image after capturing.  Submit your own with a <a href="https://github.com/rejuvyesh/lolcommits-mpv/pulls">pull-request</a> today!</p>
          </div>
           <div class="span6">
             <h4>Animated Gifs!</h4>
-            <p>Configure lolcommits to generate an <a href="https://github.com/mroth/lolcommits#animated-gif-capturing">animated gif</a> with each commmit for extra lulz (<em>MacOSX only for now</em>)</p>
+            <p>Configure lolcommits to generate an <a href="https://github.com/rejuvyesh/lolcommits-mpv#animated-gif-capturing">animated gif</a> with each commmit for extra lulz (<em>MacOSX only for now</em>)</p>
           </div>
         </div>
         <div class="row">
@@ -159,7 +160,7 @@
           </ul>
         </div>
         <div class="row">
-          <p class="span12">See many more (and add your own!) on the <a href="https://github.com/mroth/lolcommits/wiki/Lolcommits-from-around-the-world%21">People Using Lolcommits</a> wiki page.</p>
+          <p class="span12">See many more (and add your own!) on the <a href="https://github.com/rejuvyesh/lolcommits-mpv/wiki/Lolcommits-from-around-the-world%21">People Using Lolcommits</a> wiki page.</p>
         </div>
       </section>
 
@@ -171,7 +172,7 @@
             <p>You'll need ImageMagick installed. Homebrew makes this easy. Simply do:</p>
             <pre>brew install imagemagick</pre>
             <p>Then simply do:</p>
-            <pre>[sudo] gem install lolcommits</pre>
+            <pre>[sudo] gem install lolcommits-mpv</pre>
 
             <p><small>(If you're using RVM, you can/should probably omit the sudo, but the default MacOSX Ruby install is dumb and requires it.)</small></p>
 
@@ -181,22 +182,22 @@
           </div>
           <div class="span6">
             <h4><img src="assets/img/osicon/linux.gif"> Linux</h4>
-            <p>Install dependencies using your package manager of choice, for example in Ubuntu:</p>
-            <pre>apt-get install mplayer imagemagick libmagickwand-dev</pre>
+            <p>Install dependencies using your package manager of choice, for example in Arch:</p>
+            <pre>sudo pacman -S mpv imagemagick</pre>
             <!--
-            <p>On Fedora, enable the rpmfusion repository (for mplayer) and run:</p>
-            <pre>yum install ImageMagick ImageMagick-devel mplayer</pre>
+            <p>On Fedora, enable the rpmfusion repository (for mpv) and run:</p>
+            <pre>yum install ImageMagick ImageMagick-devel mpv</pre>
             -->
             <p>Then install the lolcommits gem:</p>
             <pre>gem install lolcommits</pre>
-            <p>For more detailed Linux installation instructions, check the <a href="https://github.com/mroth/lolcommits/wiki/Installing-on-Linux">Linux installation wiki page</a>.
+            <p>For more detailed Linux installation instructions, check the <a href="https://github.com/rejuvyesh/lolcommits-mpv/wiki/Installing-on-Linux">Linux installation wiki page</a>.
          </div>
        </div>
         <div class="row">
           <div class="span12">
               <h4><img src="assets/img/osicon/windows.gif"> Windows</h4>
               <p>Here be dragons!  You'll need some more detailed instructions to get the dependencies installed.</p>
-              <p><a class="btn btn-mini" href="https://github.com/mroth/lolcommits/wiki/Installing-on-Windows">View details &raquo;</a></p>
+              <p><a class="btn btn-mini" href="https://github.com/rejuvyesh/lolcommits-mpv/wiki/Installing-on-Windows">View details &raquo;</a></p>
           </div>
         </div>
       </section>
@@ -213,8 +214,8 @@
             <h4>Advanced configuration</h4>
             <p>
               Want to do something cray cray like adjusting camera delay, enabling an add-on or
-              <a href="https://github.com/mroth/lolcommits#animated-gif-capturing">animating commit gifs</a>? Check out how to <a href="https://github.com/mroth/lolcommits/wiki/Configure-Commit-Capturing">configure commit capturing</a>
-              or check out our small but growing list of <a href="https://github.com/mroth/lolcommits/wiki/Configuring-Plugins">plugins</a>.
+              <a href="https://github.com/rejuvyesh/lolcommits-mpv#animated-gif-capturing">animating commit gifs</a>? Check out how to <a href="https://github.com/rejuvyesh/lolcommits-mpv/wiki/Configure-Commit-Capturing">configure commit capturing</a>
+              or check out our small but growing list of <a href="https://github.com/rejuvyesh/lolcommits-mpv/wiki/Configuring-Plugins">plugins</a>.
             </p>
             </pre>
           </div>
@@ -224,7 +225,7 @@
       <hr>
 
       <footer>
-        &copy; lolcommits was built by <a href="http://twitter.com/mroth">@mroth</a> with assistance from <a href="https://github.com/mroth/lolcommits/graphs/contributors">many fine contributors</a>.
+        &copy; lolcommits was built by <a href="http://twitter.com/mroth">@mroth</a> with assistance from <a href="https://github.com/rejuvyesh/lolcommits-mpv/graphs/contributors">many fine contributors</a>.
       </footer>
 
     </div> <!-- /container -->
@@ -234,7 +235,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-52956-10']);
+      _gaq.push(['_setAccount', 'UA-35033901-1']);
       _gaq.push(['_trackPageview']);
 
       (function() {
