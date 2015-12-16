@@ -23,8 +23,8 @@ module Lolcommits
             exit 1
           end
         elsif Platform.platform_linux?
-          unless Platform.command_which('mplayer')
-            fatal "Couldn't find mplayer in your PATH!"
+          unless Platform.command_which('mpv')
+            fatal "Couldn't find mpv in your PATH!"
             exit 1
           end
         end
